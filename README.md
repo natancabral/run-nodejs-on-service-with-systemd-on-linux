@@ -76,7 +76,7 @@ SyslogIdentifier=nodejs-my-server-example
 # Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
 # Group=nogroup
 
-# variables
+# Variables
 Environment=PATH=/usr/bin:/usr/local/bin
 # Environment=NODE_ENV=production
 # Environment=NODE_PORT=3001
@@ -91,7 +91,7 @@ WantedBy=multi-user.target
 
 #### Enable the service on boot
 ```bash
-$ systemctl enable myserver.service
+$ systemctl enable **myserver.service**
 ```
 #### Start the service
 ```bash
