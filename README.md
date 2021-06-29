@@ -123,6 +123,8 @@ $ ps -ef | grep myserver.js
 $ chmod +x /etc/systemd/system/myserver.service
 $ chmod 664 /etc/systemd/system/myserver.service
 ```
+[about permissions](https://www.systemconf.com/2020/12/25/using-chmod-x-command-on-linux-and-unix-with-examples/)
+
 #### To kill process if you need try
 ```bash
 $ kill -9 {numberPID}
