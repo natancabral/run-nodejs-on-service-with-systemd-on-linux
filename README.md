@@ -91,7 +91,7 @@ WantedBy=multi-user.target
 
 #### Enable the service on boot
 ```bash
-$ systemctl enable **myserver.service**
+$ systemctl enable myserver.service
 ```
 #### Start the service
 ```bash
