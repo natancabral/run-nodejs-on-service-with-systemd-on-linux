@@ -17,7 +17,7 @@ const port = 3311;http.createServer((req, res) => {
   console.log(`Server running at http://${hostname}:${port}/`);
 });
 ```
-We will save this file (for example) as /home/myserver/server.js . Verify the node server works on terminal:
+We will save this file (for example) as **/home/myserver/server.js** . Verify the node server works on terminal:
 
 ```bash
 $ node /home/myserver/server.js
@@ -25,7 +25,8 @@ $ node /home/myserver/server.js
 $ nodejs /home/myserver/server.js
 ```
 
-Output: Server running at http://0.0.0.0:3311/
+Output: 
+- Server running at http://0.0.0.0:3311/
 
 ## Create the service file on Systemd
 
@@ -37,36 +38,52 @@ Create a service file on
 $ cd /etc/systemd/system/
 $ nano myserver.service
 ```
-File location: /etc/systemd/system/myserver.service
+File location: 
+- **/etc/systemd/system/myserver.service**
 
 ```bash
 [Unit]
 Description=My Little Server
 # Documentation=https://
 # Author: Natan Cabral[Service]
+
 # Start Service and Examples
 ExecStart=/usr/local/bin/node /home/myserver/server.js
 # ExecStart=/usr/bin/sudo /usr/bin/nodejs /home/myserver/server.js
-# ExecStart=/usr/local/bin/node /var/www/myproject/server.js# Options Stop and Restart
+# ExecStart=/usr/local/bin/node /var/www/myproject/server.js
+
+# Options Stop and Restart
 # ExecStop=
-# ExecReload=# Required on some systems
+# ExecReload=
+
+# Required on some systems
 # WorkingDirectory=/home/myserver/
-# WorkingDirectory=/var/www/myproject/# Restart service after 10 seconds if node service crashes
+# WorkingDirectory=/var/www/myproject/
+
+# Restart service after 10 seconds if node service crashes
 RestartSec=10
 Restart=always
-# Restart=on-failure# Output to syslog
+# Restart=on-failure
+
+# Output to syslog
 StandardOutput=syslog
 StandardError=syslog
-SyslogIdentifier=nodejs-my-server-example# #### please, not root users
+SyslogIdentifier=nodejs-my-server-example
+
+# #### please, not root users
 # RHEL/Fedora uses 'nobody'
 # User=nouser
 # Debian/Ubuntu uses 'nogroup', RHEL/Fedora uses 'nobody'
 # Group=nogroup
-# variablesEnvironment=PATH=/usr/bin:/usr/local/bin
+
+# variables
+Environment=PATH=/usr/bin:/usr/local/bin
 # Environment=NODE_ENV=production
 # Environment=NODE_PORT=3001
 # Environment="SECRET=pGNqduRFkB4K9C2vijOmUDa2kPtUhArN"
-# Environment="ANOTHER_SECRET=JP8YLOc2bsNlrGuD6LVTq7L36obpjzxd"[Install]
+# Environment="ANOTHER_SECRET=JP8YLOc2bsNlrGuD6LVTq7L36obpjzxd"
+
+[Install]
 WantedBy=multi-user.target
 ```
 
