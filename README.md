@@ -128,3 +128,7 @@ $ chmod 664 /etc/systemd/system/myserver.service
 $ kill -9 {numberPID}
 ```
 [read my article](https://natancabral.medium.com/run-node-js-service-with-systemd-on-linux-42cfdf0ad7b2)
+
+ToDo
+
+- Dev NPX - to create services files and save. prompt and readline.
