@@ -1,5 +1,7 @@
 # Run node.js service with systemd on Linux
 
+![SystemD](assets/external-content.duckduckgo.com.gif)
+
 **Node.js** as a running service is becoming more and more popular these days. One of the issues many developers face is how to ensure their node.js service starts automatically, and more importantly how to keep it running should it crash. 
 
 **Using systemd, which makes this process a lot simpler and more efficient**, and means that we do not need another scripts to run your **server node.js**.
