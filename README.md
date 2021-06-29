@@ -134,3 +134,10 @@ $ kill -9 {numberPID}
 ToDo
 
 - Dev NPX - to create services files and save. prompt and readline.
+
+Names to remember
+
+- **systemctl** - system control
+- **systemd** - system manager standard
+- **ps** - process
+- **chmod** - change the mod
