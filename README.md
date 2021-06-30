@@ -53,8 +53,9 @@ File location:
 [Unit]
 Description=My Little Server
 # Documentation=https://
-# Author: Natan Cabral[Service]
+# Author: Natan Cabral
 
+[Service]
 # Start Service and Examples
 ExecStart=/usr/local/bin/node /home/myserver/server.js
 # ExecStart=/usr/bin/sudo /usr/bin/nodejs /home/myserver/server.js
