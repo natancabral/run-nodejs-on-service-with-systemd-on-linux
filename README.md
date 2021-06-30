@@ -143,3 +143,18 @@ Names to remember
 - **systemd** - system manager standard
 - **ps** - process
 - **chmod** - change the mod
+
+## Author
+
+<table>
+  <tr>
+    <td>
+      <img src="https://github.com/natancabral.png?s=100" width="100"/>
+    </td>
+    <td>
+      Natan Cabral<br />
+      <a href="mailto:natancabral@hotmail.com">natancabral@hotmail.com</a><br />
+      <a href="https://github.com/natancabral/">https://github.com/natancabral/</a>
+    </td>
+  </tr>
+</table>
