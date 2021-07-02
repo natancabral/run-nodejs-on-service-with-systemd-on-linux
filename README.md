@@ -59,7 +59,7 @@ Description=My Little Server
 # Start Service and Examples
 ExecStart=/usr/local/bin/node /home/myserver/server.js
 # ExecStart=/usr/bin/sudo /usr/bin/node /home/myserver/server.js
-# ExecStart=/usr/local/bin/node /var/www/myproject/myserver/server.js
+# ExecStart=/usr/local/bin/node /var/www/project/myserver/server.js
 
 # Options Stop and Restart
 # ExecStop=
